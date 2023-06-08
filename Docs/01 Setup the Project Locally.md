@@ -77,3 +77,13 @@ npm start
 ```
 
 Navigate to `http://localhost:3000/` in your browser.
+
+### Step 4: Testing the Application
+
+To ensure that our application is running as expected, check the logs for the MongoDB container:
+
+```bash
+docker logs mongodb
+```
+
+You should see a "Connection accepted" message.

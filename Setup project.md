@@ -279,17 +279,34 @@ npm start
 Now, test the application by opening http://localhost:3000/, adding a TODO, marking a TODO as done, and deleting a TODO.
 
 
-# Add .gitignore file to the backend before commiting the code
-1. In your project's backend directory, create a file named `.gitignore`. You can do this using a text editor, or from the command line:
+## Ignoring node_modules in Git for the Backend
 
-```bash
-touch .gitignore
-```
+Before committing your code, ensure to set up a `.gitignore` file in your project's backend directory. Follow these steps:
 
-2. Open the `.gitignore` file and add this line:
+### Creating and Setting Up `.gitignore`
 
-```
-node_modules/
-```
+1. In your backend directory, create a `.gitignore` file. This can be done with a text editor or through the command line:
+
+    ```bash
+    touch .gitignore
+    ```
+
+2. Open the `.gitignore` file and add the following line to ignore `node_modules`:
+
+    ```
+    node_modules/
+    ```
 
 3. Save and close the `.gitignore` file.
+
+### Committing Your Code
+
+Now, you can commit your changes to the project:
+
+```bash
+git add .
+git commit -m "add TODO project"
+git push
+```
+
+By adding the `node_modules/` entry to your `.gitignore` file, Git will not include the `node_modules` directory in your commits or push to your repository.
