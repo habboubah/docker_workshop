@@ -8,15 +8,9 @@ docker stop mongodb
 ```
 
 ```bash
-docker-compose up -d
+docker-compose -f docker-compose-dockerhub.yaml up -d
 http://localhost:3000
 docker-compose down
-
-docker-compose up
-docker-compose up -d // to works in detached mode
-docker-compose up -d --build // images will only be build once, and it will not build it again if the image found so use --build to force it to build the image
-docker-compose down
-docker-compose build // will only build the images
 ```
 
 # Add a docker-compose.yaml in thr root of your project 
